@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Jalan tiap jam 12 malam
+    - cron: "0 0 * * *" 
   workflow_dispatch:
 
 jobs:
@@ -13,8 +13,7 @@ jobs:
       
       - uses: Platane/snk@v3
         with:
-          # Ganti USERNAME_GITHUB_KAMU dengan username aslimu
-          github_user_name: USERNAME_GITHUB_KAMU
+          github_user_name: syhrul23
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
